@@ -1,10 +1,12 @@
-<h1>Teams#index</h1>
+<h1>news@football:~$ cat home.txt</h1>
 <p>Find me in app/views/teams/index.html.erb</p>
 
 <ul>
   <% @teams.each do |team| %>
   <li>
-    <%= team.name %>
+    <%= link_to team_path(team[:id]) do %>
+      <%= team.name %>
+    <% end %>
   </li>
 <% end %>
 </ul>
