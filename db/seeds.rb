@@ -11,7 +11,7 @@ puts "Get all Teams from API"
 puts "..."
 
 url_teams = 'https://api.football-data.org/v2/competitions/2021/teams'
-club_data_serialized = RestClient.get(url_teams, {'X-Auth-Token' => '0d0c0925a37f431ba7e3bc1feb2a0ef3' })
+club_data_serialized = RestClient.get(url_teams, {'X-Auth-Token' => ENV['FOOTBALL_DATA_TOKEN'] })
 club_date = JSON.parse(club_data_serialized)
 
 club_date["teams"].each do |team|
