@@ -1,11 +1,8 @@
 namespace :post do
   desc "Getting Posts from NEWS_API"
   task get_all_news: :environment do
-    teams = Team.all
-    puts "Get News for #{teams.size} teams..."
-    teams.each do |team|
-      NewsApiJob.perform_later(team.id)
-    end
+    puts "Get News for all teams..."
+    NewsApiJob.perform_later
   end
 end
 

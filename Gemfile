@@ -19,9 +19,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rest-client'
 gem 'json'
+gem 'news-api'
 
 gem 'sinatra', '>= 1.3.0', :require => nil
-
 
 group :development do
   gem 'web-console', '>= 3.3.0'
