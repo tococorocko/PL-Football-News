@@ -17,16 +17,18 @@ club_date = JSON.parse(club_data_serialized)
 club_date["teams"].each do |team|
   Team.create(
     name: team["name"],
+    abbreviation: team["tla"],
+    slug: team["shortName"],
     crest:
       if team['crestUrl'] == nil
         'https://www.shareicon.net/data/2015/12/22/691473_security_512x512.png'
       else
         team['crestUrl']
       end
+
   )
 end
 
-#   team["shortName"]
 #   team["website"]
 #   team["clubColors"]
 #   team["venue"]
