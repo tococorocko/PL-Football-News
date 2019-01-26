@@ -6,27 +6,26 @@ class NewsApiJob < ApplicationJob
   def perform
     newsapi = News.new(api_key = ENV['NEWS_API_TOKEN'])
     teams = Team.all
+    Post.where(source: "News_API").destroy_all
 
     teams.each do |team|
       puts "Calling News_API for #{team.name}..."
-      top_headlines = newsapi.get_top_headlines(q: team.name,
+      top_headlines = newsapi.get_top_headlines(q: team.slug,
                                                 category: 'sports',
                                                 language: 'en',
                                                 country: 'gb')
       top_headlines.each do |headline|
-        Post.create!(
-          title: headline.name,
-          content: headline.title,
+        Post.create(
+          title: headline.title,
+          content: headline.description,
           link: headline.url,
-          team_id: team.id
+          team_id: team.id,
+          source: "News_API"
         )
-        puts "I'm in the headlines of #{team.name} now"
       end
       puts "OK I'm done now with #{team.slug}"
     end
   end
 end
-
-
 
 # https://newsapi.org
