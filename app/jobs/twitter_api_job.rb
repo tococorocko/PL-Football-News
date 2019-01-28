@@ -17,7 +17,7 @@ class TwitterApiJob < ApplicationJob
 
     teams.each do |team|
       puts "Calling Twitter_API for #{team.name}..."
-      client.search("\##{team.slug.gsub(" ", "")} -rt", { lang: "en", result_type: "popular" } ).take(20).collect do |tweet|
+      client.search("#{team.name.gsub(" ", "&")} -rt", { lang: "en", result_type: "popular" } ).take(10).collect do |tweet|
         Post.create(
           title: tweet.user.screen_name,
           content: tweet.text,
