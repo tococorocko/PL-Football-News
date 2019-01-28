@@ -1,7 +1,7 @@
 require 'twitter'
 
 class TwitterApiJob < ApplicationJob
-  queue_as :twitter
+  queue_as :default
 
   def perform(*args)
     teams = Team.all
