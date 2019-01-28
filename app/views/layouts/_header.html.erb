@@ -1,15 +1,11 @@
-<div class="container col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
-  <header class="header">
-    <nav>
-      <div>
+  <header class="header container col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+      <div class="header-item">
       <%= link_to "<", root_path, id: "logo" %>
       </div>
-      <div>
-      <h1>news@football:~$ </h1>
+      <div class="header-item">
+      <h1>news@football : ~$ </h1>
       </div>
-      <div>
+      <div class="header-item">
       <p><%= yield(:title) %></p>
       </div>
-    </nav>
   </header>
-</div>
