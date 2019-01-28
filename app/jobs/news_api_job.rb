@@ -1,7 +1,7 @@
 require 'news-api'
 
 class NewsApiJob < ApplicationJob
-  queue_as :default
+  queue_as :news
 
   def perform
     newsapi = News.new(api_key = ENV['NEWS_API_TOKEN'])
