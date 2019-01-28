@@ -1,0 +1,29 @@
+// /* header */
+header {
+  margin-right: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid #eaeaea;
+  color: $light-gray;
+  display: flex;
+  justify-content: baseline;
+  .header-item {
+    align-self: center;
+    h1 {
+      font-size: 28px;
+      margin: auto;
+      margin-left: 2vw;
+    }
+    a {
+      font-size: 28px;
+      font-weight: bolder;
+      &:hover {
+        color: #222;
+      }
+    }
+    p {
+      margin: auto;
+      margin-left: 5vw;
+    }
+  margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+  <header class="header container col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+      <div class="header-item">
+        <%= link_to "<", root_path, id: "logo" %>
+      </div>
+      <div class="header-item">
+        <h1>news@football : ~$ </h1>
+      </div>
+      <div class="header-item">
+        <p><%= yield(:title) %></p>
+      </div>
+  </header>

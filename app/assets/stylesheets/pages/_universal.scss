@@ -31,20 +31,14 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-  margin-bottom: 10px;
-  }
-}
 
 /* typography */
 
 a {
-  color: #DB3545;
-  &a:hover {
-  color: #BD2030;
-  text-decoration: none;
+color: #555;
+  &:hover {
+color: #222;
+text-decoration: none;
   }
 }
 
@@ -55,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -69,6 +63,7 @@ h2 {
 }
 
 p {
+  margin-bottom: 10px;
   font-size: 1.1em;
   line-height: 1.7em;
 }

@@ -1,17 +1,13 @@
 <% provide(:title, "Home") %>
 
 
-<div class="containter">
-  <h1>news@football:~$ cat home.txt</h1>
-  <p>Find me in app/views/teams/index.html.erb</p>
-
-  <ul>
-    <% @teams.each do |team| %>
-    <li>
-      <%= link_to team_path(team[:id]) do %>
-        <%= team.name %>
-      <% end %>
-    </li>
+  <% @teams.each do |team| %>
+    <div class="card-teams">
+      <div class="card-category-teams"><%= team.abbreviation %></div>
+      <div class="card-description-teams">
+        <h2><%= team.name %></h2>
+      </div>
+      <%= image_tag "#{team.crest}", alt: "#{team.slug}-Logo", class:"card-crest" %>
+      <%= link_to "", team_path(team), class:"card-link" %>
+    </div>
   <% end %>
-  </ul>
-</div>
