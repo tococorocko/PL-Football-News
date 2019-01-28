@@ -2,9 +2,9 @@
 
 
   <% @teams.each do |team| %>
-    <div class="card">
-      <div class="card-category"><%= team.abbreviation %></div>
-      <div class="card-description">
+    <div class="card-teams">
+      <div class="card-category-teams"><%= team.abbreviation %></div>
+      <div class="card-description-teams">
         <h2><%= team.name %></h2>
       </div>
       <%= image_tag "#{team.crest}", alt: "#{team.slug}-Logo", class:"card-crest" %>

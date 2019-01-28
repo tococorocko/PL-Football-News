@@ -9,13 +9,12 @@ header {
   .header-item {
     align-self: center;
     h1 {
-      font-size: 36px;
-      margin-left: 50px;
+      font-size: 28px;
       margin: auto;
-      margin-left: 50px;
+      margin-left: 2vw;
     }
     a {
-      font-size: 36px;
+      font-size: 28px;
       font-weight: bolder;
       &:hover {
         color: #222;
@@ -23,7 +22,7 @@ header {
     }
     p {
       margin: auto;
-      margin-left: 40px;
+      margin-left: 5vw;
     }
   margin-bottom: 10px;
   }

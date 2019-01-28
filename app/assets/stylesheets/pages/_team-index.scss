@@ -1,37 +1,42 @@
 // Specific CSS for your home-page
-.card {
-  height: 100px;
+.card-teams {
+  height: 70px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
   position: relative;
+  justify-content: left;
 }
 .card-crest {
   position: absolute;
   left: 10px;
-  top: 10px;
-  width: 40px;
+  top: 15px;
+  width: 30px;
   border-radius: 50%;
 }
-.card-category {
+.card-category-teams {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 15px;
+  font-size: 10px;
   text-transform: uppercase;
 }
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 100px;
+// .card-description-teams {
+//   // position: absolute;
+//   // bottom: 10px;
+//   // left: 70px;
+// }
+  .card-description-teams h2 {
+  font-size: 18px;
+  margin-left: 80px;
 }
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
+// .card-description-teams p {
+//   font-size: 12px;
+//   opacity: 0.7;
+//   font-weight: lighter;
+// }
 .card-link {
   position: absolute;
   top: 0;
