@@ -20,6 +20,7 @@ gem 'webpacker'
 gem 'rest-client'
 gem 'json'
 gem 'news-api'
+gem 'twitter'
 
 gem 'sinatra', '>= 1.3.0', :require => nil
 
