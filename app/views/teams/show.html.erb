@@ -1,4 +1,19 @@
 <h1>Teams#show</h1>
 <p>Find me in app/views/teams/show.html.erb</p>
 
-<%= @team.name %>
+<div class="containter">
+  <h1>news@football:~$ cat home.txt</h1>
+  <p>Find me in app/views/teams/index.html.erb</p>
+  <%= @team.name %>
+
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.link do %>
+        <%= post.title %>:
+        <%= post.content %>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>

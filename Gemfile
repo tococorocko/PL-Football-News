@@ -7,6 +7,8 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.2'
 gem 'redis'
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
@@ -17,6 +19,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rest-client'
 gem 'json'
+gem 'news-api'
+
+gem 'sinatra', '>= 1.3.0', :require => nil
 
 group :development do
   gem 'web-console', '>= 3.3.0'
