@@ -21,7 +21,6 @@ gem 'rest-client'
 gem 'json'
 gem 'news-api'
 gem 'twitter'
-gem 'coffee-rails'
 
 gem 'sinatra', '>= 1.3.0', :require => nil
 
