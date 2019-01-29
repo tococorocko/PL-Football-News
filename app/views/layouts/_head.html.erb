@@ -7,6 +7,16 @@
   <!-- defined in apps/helpers/application_helper || proved see i.e. about.html.erb -->
   <title><%= full_title(yield(:title)) %></title>
   <%= csrf_meta_tags %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133415739-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133415739-1');
+  </script>
+
   <%= stylesheet_link_tag    'application', media: 'all',
                                             'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
