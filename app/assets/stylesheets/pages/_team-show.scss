@@ -1,35 +1,42 @@
 // Specific CSS for your index-page
 .card-posts {
   height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   color: white;
-  margin-right: 10px;
-  margin-left: 10px;
+  // margin-right: 10px;
+  // margin-left: 10px;
   display: flex;
-  position: relative;
-  justify-content: left;
+  // position: relative;
+  // justify-content: space;
+  flex-flow: row wrap;
 }
 
 .card-category-posts {
-  position: absolute;
-  right: 10px;
-  top: 15px;
+  // position: absolute;
+  // right: 10px;
+  // top: 15px;
+  width: 12%;
+  margin: auto;
   font-size: 10px;
+  text-align:right;
 }
 
 .card-user-posts {
-  position: absolute;
-  right: 10px;
-  top: 5px;
+  width: 88%;
+  margin: auto;
   font-size: 10px;
-  padding-left: 5px;
+  text-align: left;
+  h2 {
+    text-align: left;
+  }
 }
 
 .card-content-posts {
-  margin-right: 80px;
+  text-align: left;
   font-size: 12px;
   opacity: 0.7;
   font-weight: lighter;
+  margin: auto;
 }

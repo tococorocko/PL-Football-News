@@ -2,11 +2,11 @@
 
 <% @posts.each do |post| %>
   <div class="card-posts">
-    <div class="card-category-posts">
-      <%= post.source %>
-    </div>
     <div class="card-user-posts">
       <h2><%= post.title %></h2>
+    </div>
+    <div class="card-category-posts">
+      <%= post.source %>
     </div>
     <div class="card-content-posts">
       <p><%= post.content %></p>
